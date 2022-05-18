@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+        <p>Hello Ian! This is a library app to keep track of the books you've read. Enjoy!</p>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <button>Change Preferences</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="images/philosophy.jpg" alt="image of stages of life" width="500">
+        </section>
+        <section>
+            <form id="book-info">
+                <label for="book-title">Title:</label>
+                <input type="text" name="title" id="book-title">
+                <label for="book-author">Author:</label>
+                <input type="text" name="author" id="book-author">
+                <label for="book-pages">Pages:</label>
+                <input type="number" name="pages" min="1" max="5000" id="book-pages">
+                <label for="book-hasRead">Have Read?</label>
+                <input type="checkbox" name="hasRead" id="book-hasRead">
+
+                <button>Add Book</button>
+            </form>
+        </section>
+        <section>
+            <div class="book-object">
+                <div class="title">Man's Search For Meaning</div>
+                <div class="author">Viktor Frankl</div>
+                <div class="pages">356</div>
+                <div class="hasRead">Has Read</div>
+            </div>
+        </section>
+    </main>
+
+
+    
+</body>
+</html>

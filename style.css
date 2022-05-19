@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* LEFT */
+
+header {
+    width: 25vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: antiquewhite; /* Temporary */
+    position: fixed;
+}
+
+header > * {
+    margin-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav > * {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+
+/* RIGHT */
+
+.cover {
+    width: 75vw;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.cover-photo {
+    position: relative;
+    width: 75rem;
+    top: -20rem;
+}
+
+main {
+    margin-left: 25vw;
+}
+
+.main-section {
+    padding: 2rem;
+}
+
+.book-form {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.form-el {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-el > input {
+    padding: 5px;
+    border: 1px solid rgba(92, 92, 92, 0.5);
+    border-radius: 8px;
+}
+
+
+.checkbox > input {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.form-btn {
+    background-color: #faebd7;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier();
+}
+
+.form-btn:hover {
+    background-color: #c4b29b;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.card {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > .title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cardBtn {
+    align-self: flex-end;
+    justify-content: end;
+}
+
+.cardBtn > button {
+    margin: 8px 8px 0 0;
+    padding: 8px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.cardBtn > button:hover {
+    background-color: rgb(199, 199, 199);
+}
+

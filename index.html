@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Library App</title>
 </head>
 <body>
@@ -13,38 +14,44 @@
         <nav>
             <a href="about.html">About</a>
             <a href="faq.html">FAQs</a>
-            <button>Change Preferences</button>
         </nav>
     </header>
     <main>
-        <section>
-            <img src="images/philosophy.jpg" alt="image of stages of life" width="500">
+        <section class="cover">
+            <img class="cover-photo" src="images/philosophy.jpg" alt="image of stages of life">
         </section>
-        <section>
-            <form id="book-info">
-                <label for="book-title">Title:</label>
-                <input type="text" name="title" id="book-title">
-                <label for="book-author">Author:</label>
-                <input type="text" name="author" id="book-author">
-                <label for="book-pages">Pages:</label>
-                <input type="number" name="pages" min="1" max="5000" id="book-pages">
-                <label for="book-hasRead">Have Read?</label>
-                <input type="checkbox" name="hasRead" id="book-hasRead">
-
-                <button>Add Book</button>
-            </form>
-        </section>
-        <section>
-            <div class="book-object">
-                <div class="title">Man's Search For Meaning</div>
-                <div class="author">Viktor Frankl</div>
-                <div class="pages">356</div>
-                <div class="hasRead">Has Read</div>
-            </div>
-        </section>
+        <div class="main-section">
+            <section class="book-form">
+                <h2>Add Book</h2>
+                <form id="form">
+                    <div class="form-el">
+                        <label for="book-title">Title:</label>
+                        <input type="text" name="title" id="book-title" required>
+                    </div>
+                    <div class="form-el">
+                        <label for="book-author">Author:</label>
+                        <input type="text" name="author" id="book-author" required>
+                    </div>
+                    <div class="form-el">
+                        <label for="book-pages">Pages:</label>
+                        <input type="number" name="pages" min="1" max="5000" id="book-pages" required>
+                    </div>
+                    <div class="form-el checkbox">
+                        <label for="book-hasRead">Have Read?</label>
+                        <input type="checkbox" name="hasRead" id="book-hasRead">
+                    </div>                
+    
+                    <input type="submit" value="+ Add Book" class="form-btn">
+                </form>
+            </section>
+            <section class="cards">
+                
+            </section>
+        </div>
+        
     </main>
 
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

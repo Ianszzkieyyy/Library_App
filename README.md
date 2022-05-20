@@ -9,3 +9,8 @@ on my web development fundamentals.
 - On the main menu, there is a little form that can be used to add books.
 - (OPTIONAL) add filters based on alphabetical order, filter read or not read etc.
 
+## 05/20/22 UPDATE
+- I have finished creating the app. The only thing I added was the key features. All features not added will be added later. For now, I just wanted to 
+get coding reps in and do my best to create a working and functioning app, albeit not the best written code. :)
+
+- Current limitations include; currently non-responsive, ugly UI design, nav links don't have any content.
